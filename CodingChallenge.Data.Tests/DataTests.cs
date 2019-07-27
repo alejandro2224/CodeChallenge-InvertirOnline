@@ -1,7 +1,7 @@
 ﻿using CodingChallenge.Data.Classes;
+using CodingChallenge.Data.Localizacion;
 using NUnit.Framework;
 using System.Collections.Generic;
-using CodingChallenge.Data.Localizacion;
 
 namespace CodingChallenge.Data.Tests
 {
