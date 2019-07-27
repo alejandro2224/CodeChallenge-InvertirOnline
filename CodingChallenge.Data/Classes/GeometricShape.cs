@@ -26,7 +26,7 @@ namespace CodingChallenge.Data.Classes
             public int Amount { get; set; }
         }
 
-        private static LocalizationProvider _localizationProvider => LocalizationProvider.Instance;
+        private static ILocalizationProvider _localizationProvider => LocalizationProvider.Instance;
         protected readonly decimal _side;
 
         protected GeometricShape(decimal width)
