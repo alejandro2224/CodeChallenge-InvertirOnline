@@ -5,9 +5,11 @@ namespace CodingChallenge.Data.Localizacion
 {
     public class LocalizationProvider : ILocalizationProvider
     {
-        private ResourceManager _resourceManager;
+        private readonly ResourceManager _resourceManager;
 
-        public LocalizationProvider()
+        public static LocalizationProvider Instance => new LocalizationProvider();
+
+        private LocalizationProvider()
         {
             _resourceManager = new ResourceManager(
                 "CodingChallenge.Data.Localizacion.Localizacion",
@@ -17,11 +19,11 @@ namespace CodingChallenge.Data.Localizacion
             };
         }
 
-        public string GetTranslation(string key, string twoKeyCulture)
+        public string GetTranslation(string key, Language language)
         {
             return _resourceManager.GetString(
                 key,
-                new CultureInfo(twoKeyCulture));
+                new CultureInfo(language.ToString()));
         }
     }
 }

@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="Circle" xml:space="preserve">
+    <value>Circulo</value>
+  </data>
+  <data name="Circles" xml:space="preserve">
+    <value>Círculos</value>
+  </data>
+  <data name="EmptyShapeList" xml:space="preserve">
+    <value>&lt;h1&gt;Lista vacía de formas!&lt;/h1&gt;</value>
+  </data>
+  <data name="EquilatereTriangle" xml:space="preserve">
+    <value>Triángulo</value>
+  </data>
+  <data name="EquilatereTriangles" xml:space="preserve">
+    <value>Triángulos</value>
+  </data>
+  <data name="IsoscelesTrapezium" xml:space="preserve">
+    <value>Trapecio</value>
+  </data>
+  <data name="Perimeter" xml:space="preserve">
+    <value>Perimetro</value>
+  </data>
+  <data name="Shapes" xml:space="preserve">
+    <value>Formas</value>
+  </data>
+  <data name="ShapesReport" xml:space="preserve">
+    <value>&lt;h1&gt;Reporte de Formas&lt;/h1&gt;</value>
+  </data>
   <data name="Square" xml:space="preserve">
     <value>Cuadrado</value>
+  </data>
+  <data name="Squares" xml:space="preserve">
+    <value>Cuadrados</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>TOTAL:&lt;br/&gt;</value>
   </data>
 </root>

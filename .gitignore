@@ -68,6 +68,4 @@ _ReSharper*/
 #Test files
 *.testsettings
 
-packages/
 bin/
-obj/

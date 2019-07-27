@@ -61,11 +61,119 @@ namespace CodingChallenge.Data.Localizacion {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Area.
+        /// </summary>
+        internal static string Area {
+            get {
+                return ResourceManager.GetString("Area", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Circle.
+        /// </summary>
+        internal static string Circle {
+            get {
+                return ResourceManager.GetString("Circle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Circles.
+        /// </summary>
+        internal static string Circles {
+            get {
+                return ResourceManager.GetString("Circles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;h1&gt;Empty list of shapes!&lt;/h1&gt;.
+        /// </summary>
+        internal static string EmptyShapeList {
+            get {
+                return ResourceManager.GetString("EmptyShapeList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Equilatere Triangle.
+        /// </summary>
+        internal static string EquilatereTriangle {
+            get {
+                return ResourceManager.GetString("EquilatereTriangle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Triangles.
+        /// </summary>
+        internal static string EquilatereTriangles {
+            get {
+                return ResourceManager.GetString("EquilatereTriangles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Trapeze.
+        /// </summary>
+        internal static string IsoscelesTrapezium {
+            get {
+                return ResourceManager.GetString("IsoscelesTrapezium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Perimeter.
+        /// </summary>
+        internal static string Perimeter {
+            get {
+                return ResourceManager.GetString("Perimeter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Shapes.
+        /// </summary>
+        internal static string Shapes {
+            get {
+                return ResourceManager.GetString("Shapes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;h1&gt;Shapes report&lt;/h1&gt;.
+        /// </summary>
+        internal static string ShapesReport {
+            get {
+                return ResourceManager.GetString("ShapesReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Square.
         /// </summary>
         internal static string Square {
             get {
                 return ResourceManager.GetString("Square", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Squares.
+        /// </summary>
+        internal static string Squares {
+            get {
+                return ResourceManager.GetString("Squares", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a TOTAL:&lt;br/&gt;.
+        /// </summary>
+        internal static string Total {
+            get {
+                return ResourceManager.GetString("Total", resourceCulture);
             }
         }
     }

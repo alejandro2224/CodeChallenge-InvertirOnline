@@ -52,8 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Classes\Circle.cs" />
+    <Compile Include="Classes\Square.cs" />
+    <Compile Include="Classes\GeometricShape.cs" />
+    <Compile Include="Classes\EquilatereTriangle.cs" />
+    <Compile Include="Classes\IsoscelesTrapezium.cs" />
     <Compile Include="Localizacion\ILocalizationProvider.cs" />
+    <Compile Include="Localizacion\Language.cs" />
     <Compile Include="Localizacion\Localizacion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

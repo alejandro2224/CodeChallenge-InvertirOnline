@@ -9,20 +9,20 @@ namespace CodingChallenge.Data.Tests.Localizacion
         [Test]
         public void MustObtainTranslationInThreeLanguages()
         {
-            var localizationProvider = new LocalizationProvider();
-            var key = "Square";
+            var localizationProvider = LocalizationProvider.Instance;
+            const string key = "Square";
 
             var esTranslation = localizationProvider.GetTranslation(
                 key,
-                "es");
+                Language.Es);
 
             var enTranslation = localizationProvider.GetTranslation(
                 key,
-                "en");
+                Language.En);
 
             var itTranslation = localizationProvider.GetTranslation(
                 key,
-                "it");
+                Language.It);
 
             Assert.That(esTranslation, Is.EqualTo("Cuadrado"));
             Assert.That(enTranslation, Is.EqualTo("Square"));

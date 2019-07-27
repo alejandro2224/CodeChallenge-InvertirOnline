@@ -2,6 +2,6 @@
 {
     public interface ILocalizationProvider
     {
-        string GetTranslation(string key, string twoKeyCulture);
+        string GetTranslation(string key, Language language);
     }
 }
