@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CodingChallenge.Data</RootNamespace>
     <AssemblyName>CodingChallenge.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -53,12 +53,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Localizacion\ILocalizationProvider.cs" />
+    <Compile Include="Localizacion\Localizacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localizacion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localizacion\Localizacion.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localizacion.es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localizacion\Localizacion.it.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localizacion.it.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localizacion\LocalizationProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Localizacion\Localizacion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localizacion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localizacion\Localizacion.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localizacion.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localizacion\Localizacion.it.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localizacion.it.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

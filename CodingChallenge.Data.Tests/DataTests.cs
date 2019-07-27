@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using CodingChallenge.Data.Classes;
+﻿using CodingChallenge.Data.Classes;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace CodingChallenge.Data.Tests
 {
@@ -25,7 +24,7 @@ namespace CodingChallenge.Data.Tests
         [TestCase]
         public void TestResumenListaConUnCuadrado()
         {
-            var cuadrados = new List<FormaGeometrica> {new FormaGeometrica(FormaGeometrica.Cuadrado, 5)};
+            var cuadrados = new List<FormaGeometrica> { new FormaGeometrica(FormaGeometrica.Cuadrado, 5) };
 
             var resumen = FormaGeometrica.Imprimir(cuadrados, FormaGeometrica.Castellano);
 
