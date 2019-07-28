@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Resources;
 
 namespace CodingChallenge.Data.Localizacion
@@ -21,6 +22,9 @@ namespace CodingChallenge.Data.Localizacion
 
         public string GetTranslation(string key, Language language)
         {
+            if (string.IsNullOrEmpty(key))
+                throw new ArgumentNullException(nameof(key));
+
             return _resourceManager.GetString(
                 key,
                 new CultureInfo(language.ToString()));

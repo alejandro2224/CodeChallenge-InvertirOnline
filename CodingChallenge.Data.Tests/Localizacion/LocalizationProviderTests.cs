@@ -1,4 +1,5 @@
-﻿using CodingChallenge.Data.Localizacion;
+﻿using System;
+using CodingChallenge.Data.Localizacion;
 using NUnit.Framework;
 
 namespace CodingChallenge.Data.Tests.Localizacion
@@ -27,6 +28,14 @@ namespace CodingChallenge.Data.Tests.Localizacion
             Assert.That(esTranslation, Is.EqualTo("Cuadrado"));
             Assert.That(enTranslation, Is.EqualTo("Square"));
             Assert.That(itTranslation, Is.EqualTo("Quadrato"));
+        }
+
+        [Test]
+        public void GetTranslationMustThrowException()
+        {
+            var localizationProvider = LocalizationProvider.Instance;
+            Assert.Throws<ArgumentNullException>(
+                () => localizationProvider.GetTranslation(null, Language.En));
         }
     }
 }
